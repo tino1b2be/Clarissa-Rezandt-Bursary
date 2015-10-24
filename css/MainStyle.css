@@ -1,0 +1,149 @@
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("images/hands2.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: repeat-x;
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+div4{
+    color: blue;
+}
+div2{
+    position: relative;
+    top: 5px;
+    left: 15vw;
+}
+p1{
+    padding: 15px;
+    margin: 0px;
+    width: 100%;
+    font-size: 2.5vw;
+    font-family: Monthoer;
+}
+
+div3{
+    display: block;
+    width: 800px;
+    background-color: black;
+    opacity: 0.8;
+    position: relative;
+    left: 13vw;
+}
+p3{
+    padding: 15px;
+    margin: 0px;
+    font-size: 1.5vw;
+    color: white;
+    opacity: 1;
+}
+
+p4{
+    position: fixed;
+    right: 2vw;
+    color: white;
+    bottom: 1vw;
+}
+h2{
+    color: white;
+    text-align: center;
+}
+div1{
+    position: relative;
+    top: 5px;
+    left: 23vw;
+}
+.hvr-shutter-out-horizontal {
+    width: 1000px;
+    height: 200px;
+    display: -webkit-flex; /* Safari */
+    opacity: 0;
+    -webkit-flex-direction: row-reverse; /* Safari 6.1+ */
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: blue;
+}
+
+h1{
+    font-size: 4vw;
+    position: relative;
+    left: -6vw;
+    color: azure;
+    text-align: center;
+}
+a{
+    text-shadow: black;
+    color: gainsboro;
+    text-decoration: none;
+
+}
+a:hover{
+    color: floralwhite;
+}
+
+/* Effect: borders slight translate */
+.cl-effect a {
+	padding: 10px;
+	color: #ffffff;
+	font-weight: 700;
+	text-shadow: none;
+	-webkit-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	transition: color 0.3s;
+}
+
+.cl-effect a::before,
+.cl-effect a::after {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: #fff;
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	-moz-transition: opacity 0.3s, -moz-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+	-webkit-transform: translateY(-10px);
+	-moz-transform: translateY(-10px);
+	transform: translateY(-10px);
+}
+
+.cl-effect a::before {
+	top: 0.7;
+	-webkit-transform: translateY(-10px);
+	-moz-transform: translateY(-10px);
+	transform: translateY(-10px);
+}
+
+.cl-effect a::after {
+	bottom: 0;
+	-webkit-transform: translateY(10px);
+	-moz-transform: translateY(10px);
+	transform: translateY(10px);
+}
+
+.cl-effect a:hover,
+.cl-effect a:focus {
+	color: #fff;
+}
+
+.cl-effect a:hover::before,
+.cl-effect a:focus::before,
+.cl-effect a:hover::after,
+.cl-effect a:focus::after {
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	transform: translateY(0px);
+}
